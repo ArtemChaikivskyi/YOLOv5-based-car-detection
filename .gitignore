@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ruff_cache/
+
+# uv
+# (uv.lock is committed on purpose)
+
+# IDE / OS
+.idea/
+.DS_Store
+
+# YOLOv5 runtime output
+runs/

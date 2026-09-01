@@ -1,0 +1,24 @@
+[project]
+name = "car"
+version = "0.1.0"
+description = "YOLOv5-based car detection"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "opencv-python>=4.8",
+    "yolov5>=7.0.14",
+    # yolov5 7.x still imports the legacy `pkg_resources`, dropped in setuptools >= 81
+    "setuptools<81",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
